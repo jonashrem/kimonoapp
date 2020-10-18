@@ -9,6 +9,7 @@ Vue.use(DropdownPlugin)
 Vue.use(TablePlugin)
 import { FormSelectPlugin } from 'bootstrap-vue'
 import router from './router'
+import './registerServiceWorker'
 Vue.use(FormSelectPlugin)
 
 Vue.config.productionTip = false

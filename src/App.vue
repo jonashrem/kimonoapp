@@ -1,17 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <KimonoFilter />
+    <Kimono kimono="1"/>
+    <Kimono kimono="2"/>
+    <Kimono kimono="1"/>
+    <Kimono kimono="2"/>
+    <Kimono kimono="1"/>
+    <Kimono kimono="2"/>
+    <Kimono kimono="1"/>
+    <Kimono kimono="2"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Kimono from './components/Kimono.vue'
+import KimonoFilter from './components/KimonoFilter.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Kimono,
+    KimonoFilter
   }
 }
 </script>

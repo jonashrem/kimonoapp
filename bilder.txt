@@ -1,0 +1,2 @@
+convert 2.jpg -rotate 90 -resize 378x504 2.webp
+

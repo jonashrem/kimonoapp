@@ -17,7 +17,7 @@
      </tr>
     </table>
     <br />
-    <button type="button" class="btn btn-primary">Auswählen</button>
+    <router-link v-if="!showbutton" v-bind:to="'obi/' + kimono" class="btn btn-primary btn-lg active" role="button"  >Auswählen</router-link>
     </div>
      <div class="kimonoimage ">
     <img v-bind:src="'https://miniapps.jonas.huenig.name/kimono-app/kimonos/' + kimono +'.webp'"  alt="Kimono" style="max-width:100%;height:auto;">
@@ -29,7 +29,8 @@
 export default {
   name: 'Kimono',
   props: {
-    kimono: String
+    kimono: String,
+    showbutton: Boolean
   }
 }
 </script>

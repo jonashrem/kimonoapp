@@ -2,6 +2,7 @@
   <div id="app">
     <KimonoFilter />
     <Kimono kimono="1"/>
+    <Kimono kimono="1"/>
     <Kimono kimono="2"/>
     <Kimono kimono="1"/>
     <Kimono kimono="2"/>

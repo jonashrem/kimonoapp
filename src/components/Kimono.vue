@@ -1,7 +1,7 @@
 <template>
   <div class="kimono">
     <div class="kimonotext ">
-    <h2>Kimoni Name</h2>
+    <h4>Kimoni Name</h4>
     <table style="width:50%">
      <tr>
        <td><b>Typ</b></td>
@@ -17,10 +17,10 @@
      </tr>
     </table>
     <br />
-
+    <button type="button" class="btn btn-primary">Auswählen</button>
     </div>
      <div class="kimonoimage ">
-    <img src="https://miniapps.jonas.huenig.name/kimono-app/kimonos/1.webp" alt="Kimono" style="max-width:100%;height:auto;">
+    <img v-bind:src="'https://miniapps.jonas.huenig.name/kimono-app/kimonos/' + kimono +'.webp'"  alt="Kimono" style="max-width:100%;height:auto;">
     </div>
   </div>
 </template>
@@ -34,20 +34,18 @@ export default {
 }
 </script>
 
-
-
 <style scoped>
 .kimonotext {
 float: left;
-width: 40%;
-padding: 20px;
+padding: 5px;
+width: 180px;
 box-sizing: border-box;
 }
 
 .kimonoimage {
 float: left;
-width: 40%;
-padding: 20px;
+padding: 5px;
+width: 200px;
 box-sizing: border-box;
 }
 
@@ -55,7 +53,6 @@ box-sizing: border-box;
 float:left;
 margin: 10px;
 padding: 10px;
-width: 600px;
 border-style: solid;
 }
 </style>
